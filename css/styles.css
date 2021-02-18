@@ -5,7 +5,7 @@
   font-family: arial,sans-serif;
   margin: 0;
   padding: 0;
-  font-size: 14px;
+  font-size: small;
 }
 
 html, body {
@@ -66,9 +66,38 @@ ul li {
   margin: 0 auto;
 }
 
+.search-items {
+  width: min-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #dfe1e5;
+  border-radius: 24px;
+  height: 44px;
+  margin: 0 auto;
+  width: 447px;
+  padding: 0px 20px 0px 16px;
+}
+
+#search-glass {
+  width: 22px;
+  height: 22px;
+  margin-bottom: 5px;
+}
+
+#search-mic {
+  width: 18px;
+  height: 28px;
+}
+
 input[type=text] {
-  border-radius: 28px;
   line-height: 34px;
+  border: none;
+  width: 400px;
+  font-size: medium;
+  color: #212121;
+  padding: 0 10px;
 }
 
 input[type=submit] {
