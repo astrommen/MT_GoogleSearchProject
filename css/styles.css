@@ -15,12 +15,13 @@ html, body {
 /* Main styling */
 .main {
   height: 100%;
+  padding: 15px;
   flex: 1 0 auto;
 }
 
 /* Nav styling */
 nav {
-  color: #222;
+  color: #3F3F45;
   font-size: small;
 }
 
@@ -30,22 +31,13 @@ nav, footer {
   justify-content: space-between;
 }
 
-/* Main content styling */
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex: 1 0 auto;
-  /* min-height: 88.5vh; */
-}
-
-
 ul {
   /* font-size: 14px; */
   font-weight: 400;
   /* margin: 20px 0; */
   display: flex;
   flex-direction: row;
+  align-items: center;
   list-style-type: none;
 }
 
@@ -54,12 +46,34 @@ ul li {
 }
 
 #tiles {
-  background-image: url('../images/tile.png');
+  background-image: url('../images/grid.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 2px;
   height: 2px;
+  margin: 0 10px;
+}
+
+#sign-in {
+  background-color: #4285f4;
+  border: 1px solid #4285f4;
+  border-radius: 2px;
+  font-weight: bold;
+  color: #fff;
+  font-size: 13px;
+  line-height: 28px;
+  padding: 0 12px;
+  margin: 0 10px;
+}
+
+/* Main content styling */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 0 auto;
+  /* min-height: 88.5vh; */
 }
 
 .title {
