@@ -52,6 +52,10 @@ ul li {
   padding: 10px;
 }
 
+ul li:hover {
+  text-decoration-line: underline;
+}
+
 #tiles {
   background-image: url('../images/grid.png');
   background-position: center;
@@ -72,6 +76,7 @@ ul li {
   line-height: 28px;
   padding: 0 12px;
   margin: 0 10px;
+  text-decoration: none;
 }
 
 /* Main content styling */
@@ -136,6 +141,10 @@ input[type=text] {
   font-size: medium;
   color: #212121;
   padding: 0 10px;
+}
+
+input[type=text]:focus {
+  outline: none;
 }
 
 /* Submit btn styling */
