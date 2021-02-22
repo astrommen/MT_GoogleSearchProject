@@ -5,18 +5,25 @@
   font-family: arial,sans-serif;
   margin: 0;
   padding: 0;
-  font-size: small;
 }
 
 html, body {
   height: 100%;
+  font-size: small;
 }
 
 /* Main styling */
+.container {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 .main {
   height: 100%;
   padding: 15px;
   flex: 1 0 auto;
+
 }
 
 /* Nav styling */
@@ -92,6 +99,11 @@ ul li {
   margin-top: 23px; 
 }
 
+.search:hover {
+  box-shadow: 0 1px 6px rgb(0 0 0 / 10%);
+  border-radius: 24px;
+}
+
 .search-items {
   width: min-content;
   display: flex;
@@ -126,6 +138,7 @@ input[type=text] {
   padding: 0 10px;
 }
 
+/* Submit btn styling */
 .submit-btns {
   margin-top: 29px;
 }
@@ -140,11 +153,20 @@ input[type=submit] {
   font-size: 14px;
 }
 
+input[type=submit]:hover {
+  box-shadow: 0 1px 1px rgb(0 0 0/ 10%);
+  background-color: #f8f8f8;
+  border: 1px solid #c6c6c6;
+  color: #222;
+}
+
 /* Footer Styling */
 footer {
-  color: #5f6368;
   background-color: #f2f2f2;
-  line-height: 20px;
   border-top: 1px solid #e4e4e4;
+  padding: 0 20px;
+  line-height: 20px;
+  color: #5f6368;
+  font-size: 14px;
   flex-shrink: 0;
 }

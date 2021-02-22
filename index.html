@@ -11,63 +11,65 @@
   <title>Mock Google Search</title>
 </head>
 <body>
-  <div class="main">
-    <nav>
+  <div class="container">
+    <div class="main">
+      <nav>
+        <div class="google-btns">
+          <ul>
+            <li>About</li>
+            <li>Store</li>
+          </ul>
+        </div>
+
+        <div class="user-btns">
+          <ul>
+            <li>Gmail</li>
+            <li>Images</li>
+            <li id="tiles"></li>
+            <li id="sign-in">Sign in</li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="content">
+        <div class="title">
+          <img id="logo"
+            src="https://web.archive.org/web/20191130234759im_/https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+            alt="logo">
+        </div>
+
+        <div class="search">
+          <div class="search-items">
+            <img id="search-glass" src="./images/google-mag-glass.png" alt="magnify glass">
+            <input type="text" name="search-box" id="search-bar">
+            <img id="search-mic" src="./images/google-mic.png" alt="">
+          </div>
+        </div>
+
+        <div class="submit-btns">
+          <input type="submit" value="Google Search">
+          <input type="submit" value="I'm Feeling Lucky">
+        </div>
+      </div> 
+    </div>
+
+    <footer>
       <div class="google-btns">
         <ul>
-          <li>About</li>
-          <li>Store</li>
+          <li>Advertising</li>
+          <li>Business</li>
+          <li>How Search works</li>
         </ul>
       </div>
 
       <div class="user-btns">
         <ul>
-          <li>Gmail</li>
-          <li>Images</li>
-          <li id="tiles"></li>
-          <li id="sign-in">Sign in</li>
+          <li>Privacy</li>
+          <li>Terms</li>
+          <li>Settings</li>
         </ul>
       </div>
-    </nav>
-
-    <div class="content">
-      <div class="title">
-        <img id="logo"
-          src="https://web.archive.org/web/20191130234759im_/https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
-          alt="logo">
-      </div>
-
-      <div class="search">
-        <div class="search-items">
-          <img id="search-glass" src="./images/google-mag-glass.png" alt="magnify glass">
-          <input type="text" name="search-box" id="search-bar">
-          <img id="search-mic" src="./images/google-mic.png" alt="">
-        </div>
-      </div>
-
-      <div class="submit-btns">
-        <input type="submit" value="Google Search">
-        <input type="submit" value="I'm Feeling Lucky">
-      </div>
-    </div>
-      
+    </footer>
   </div>
-  <footer>
-    <div class="google-btns">
-      <ul>
-        <li>Advertising</li>
-        <li>Business</li>
-        <li>How Search works</li>
-      </ul>
-    </div>
-    
-    <div class="user-btns">
-      <ul>
-        <li>Privacy</li>
-        <li>Terms</li>
-        <li>Settings</li>
-      </ul>
-    </div>
-  </footer>
 </body>
 </html>
